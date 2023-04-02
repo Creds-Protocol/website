@@ -62,8 +62,9 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={6}>
               <div>
                 {/* <span className="tagline">Welcome to my Portfolio</span> */}
-                <span>Decentralized identity and verification protocol that leverages zero-knowledge 
-                  proofs to provide a privacy-preserving solution</span>
+                <span>Just as life in the ocean that lies beyond the reach of the sun's rays remains hidden, 
+                    the use of Creds Protocol ensures that sensitive information remains hidden from 
+                    prying eyes, while allowing to verify the information.</span>
                 <button onClick={() => openInNewTab('https://creds-protocol-documentation.vercel.app/')}>
                   Start Building <ArrowRightCircle size={25} />
                 </button>
