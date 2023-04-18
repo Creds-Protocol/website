@@ -1,13 +1,11 @@
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import logo from "../assets/img/CredsProtocolLogo.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
-import { HashLink } from "react-router-hash-link";
+import { ArrowRightCircle } from "react-bootstrap-icons";
 import { Github } from "react-bootstrap-icons";
 import { Twitter } from "react-bootstrap-icons";
 import { BrowserRouter as Router } from "react-router-dom";
+import { BookHalf } from "react-bootstrap-icons";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -31,8 +29,8 @@ export const NavBar = () => {
     setActiveLink(value);
   };
 
-  const openInNewTab = url => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -49,45 +47,24 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              {/* <Nav.Link
-                href="#home"
-                className={
-                  activeLink === "home" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("home")}
-              >
-                Home
-              </Nav.Link>
-              <Nav.Link
-                href="#skills"
-                className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("skills")}
-              >
-                Skills
-              </Nav.Link>
-              <Nav.Link
-                href="#projects"
-                className={
-                  activeLink === "projects"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("projects")}
-              >
-                Projects
-              </Nav.Link> */}
             </Nav>
             <span className="navbar-text">
             <div className="social-icon">
+                <BookHalf
+                  color="white"
+                  size={30}
+                  onClick={() =>
+                    openInNewTab("https://creds-protocol-documentation.vercel.app/")
+                  }
+                />
+              </div>
+              <div className="social-icon"></div>
+              <div className="social-icon">
                 <Twitter
                   color="white"
                   size={30}
                   onClick={() =>
-                    openInNewTab(
-                      "https://twitter.com/CredsProtocol"
-                    )
+                    openInNewTab("https://twitter.com/CredsProtocol")
                   }
                 />
               </div>
@@ -97,9 +74,7 @@ export const NavBar = () => {
                   color="white"
                   size={30}
                   onClick={() =>
-                    openInNewTab(
-                      "https://github.com/Creds-Protocol"
-                    )
+                    openInNewTab("https://github.com/Creds-Protocol")
                   }
                 />
               </div>

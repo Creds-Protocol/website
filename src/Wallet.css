@@ -1,0 +1,163 @@
+/* Wallet */
+.vault {
+  margin-top: 0;
+  padding: 90px 0 100px 0;
+  background-image: url("https://wallpaperaccess.com/full/1963411.jpg");
+  background-position: top center;
+  background-size:auto;
+  background-repeat: no-repeat;
+}
+
+#loginform {
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 700px;
+  width: 30%;
+  height: 60%;
+  margin: 100px auto;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+#valutimg {
+  max-width: 100px;
+  min-width: 100px;
+  max-height: 100px;
+  width: 30%;
+  height: 60%;
+  margin: 10px auto;
+  background-color: #ffffff;
+}
+
+#walleticons {
+  max-width: 80px;
+  min-width: 80px;
+  max-height: 80px;
+  margin: 10px auto;
+}
+
+#newWalletSection {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#key {
+  margin-left: 10px;
+}
+
+#closeButton {
+  padding: 20px;
+}
+
+#generateButton {
+  margin-left: 20px;
+  margin-right: 1px;
+}
+
+#headerTitle {
+  color: black;
+  text-align: center;
+  font-family: "open sans", sans-serif;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.roww {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  max-width: 100%;
+}
+
+.roww input {
+  width: 80%;
+  box-sizing: border-box;
+  border: none;
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  box-shadow: inset 0px -3px 0px 0px rgba(187, 187, 187, 0.2);
+  transition: box-shadow 0.2s ease-in;
+}
+
+.roww input:focus {
+  box-shadow: inset 0px -3px 0px 0px rgba(34, 193, 195, 0.7);
+  outline: none;
+}
+
+.roww input::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.25s ease-out;
+}
+
+.roww input:hover::-webkit-input-placeholder,
+.roww input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.roww label {
+  align-self: start;
+  padding-left: 4.5rem;
+  padding-bottom: 0.5rem;
+  color: rgba(187, 187, 187, 0.9);
+}
+
+.roww button {
+  border-radius: 25px;
+  width: 80%;
+  height: 40px;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  border: 0px;
+  cursor: pointer;
+  transition: opacity 0.25s ease-out;
+}
+
+.roww button:hover {
+  opacity: 0.8;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+  margin: 20px;
+}
+
+.grey-box {
+  /* background-color: #e6e6e6; Grey color */
+  border-radius: 5px; /* Rounded corners */
+  /* padding: 10px; Padding around the text */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); Shadow effect */
+  position: relative; /* Position the icon relative to the grey box */
+}
+
+
+.grey-box p {
+  font-size: 18px; /* Font size of the text */
+  line-height: 1.5; /* Line height of the text */
+  margin: 0; /* Remove default margin */
+  margin-right: 35px; /* Add margin to the right of the text */
+  color: #333; /* Text color */
+  overflow: hidden; /* Hide text that exceeds the width of the box */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-overflow: ellipsis; /* Show ellipsis (...) at the end of the truncated text */
+}
+
+.grey-box i {
+  position: absolute; /* Position the icon absolutely */
+  right: 10px; /* Position the icon 10 pixels from the right */
+  top: 50%; /* Position the icon in the middle of the grey box */
+  transform: translateY(-50%); /* Center the icon vertically */
+  font-size: 20px; /* Font size of the icon */
+  cursor: pointer; /* Add cursor pointer on hover */
+  color: #333; /* Icon color */
+  left: calc(95%); /* Position the icon 10 pixels to the right of the text */
+}
